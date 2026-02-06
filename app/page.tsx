@@ -73,6 +73,13 @@ export default function Home() {
         <p className="text-xl mb-8">
           {score > 200 ? "You are a Master of Harmony." : score > 0 ? "You are socially acceptable." : "You are a KY (Kuuki Yomenai)."}
         </p>
+        <a 
+          href={`https://twitter.com/intent/tweet?text=I%20scored%20${score}%20points%20in%20Kuuki%20Yomi%20Hero!%20Can%20you%20read%20the%20atmosphere?%20%23KuukiYomiHero`}
+          target="_blank"
+          className="bg-[#1DA1F2] text-white px-8 py-3 rounded font-bold mb-4 block hover:bg-[#1a91da]"
+        >
+          Share on X
+        </a>
         <button onClick={() => window.location.reload()} className="bg-white text-black px-8 py-3 rounded font-bold">Try Again</button>
       </main>
     );
